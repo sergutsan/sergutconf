@@ -40,7 +40,16 @@ git_branch_or_current_dir() {
 }
 
 red_dollar() {
-  echo '\[\e[0;31m\]$\[\e[0m\]'
+    local RCol='\[\e[0m\]'
+
+    local Red='\[\e[0;31m\]'
+    local Gre='\[\e[0;32m\]'
+    local BYel='\[\e[1;33m\]'
+    local BBlu='\[\e[1;34m\]'
+    local Pur='\[\e[0;35m\]'
+
+
+    echo "${Red}\$${RCol}"
 }
 
 PROMPT_COMMAND=__prompt_command 
