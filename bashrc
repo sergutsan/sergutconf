@@ -1,14 +1,14 @@
 #!/bin/bash
 
-############################################################
-# Configuration I carry around with me.                    #
-#                                                          #
-# Link it directly with 'ln -S sergutconf/bashrc .bashrc'  #
-# or indirectly adding this to your .xxxxrc:               #
-#                                                          #
-# [ -f ~/sergutconf/bashrc ] && . ~/sergutconf/bashrc      #
-#                                                          #
-############################################################
+##################################################################
+# Configuration I carry around with me.                          #
+#                                                                #
+# Link it directly with 'ln -S ~/src/sergutconf/bashrc .bashrc'  #
+# or indirectly adding this to your .XXXXrc:                     #
+#                                                                #
+# [ -f ~/src/sergutconf/bashrc ] && . ~/src/sergutconf/bashrc    #
+#                                                                #
+##################################################################
 
 
 ###################
@@ -70,4 +70,4 @@ __prompt_command() {
 #    Aliases    #
 #################
 
-alias ls='ls -G'
+alias ls='ls -G --color'
