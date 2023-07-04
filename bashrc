@@ -71,3 +71,12 @@ __prompt_command() {
 #################
 
 alias ls='ls -G --color'
+
+#################
+#  Other stuff  #
+#################
+clean_emacs_backups() {
+  BAK_DIR="emacs_backups/`date +%Y-%m-%d_%H%M`"
+  mkdir -p ${BAK_DIR}
+  mv -i *~ ${BAK_DIR}
+}
